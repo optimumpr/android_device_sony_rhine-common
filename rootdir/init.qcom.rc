@@ -258,7 +258,12 @@ on boot
     chown system /data/system/sensors/settings
     start sensors
 
+    # vibrator intensity
     chown system /sys/devices/virtual/timed_output/vibrator/vtg_level
+
+    # display color calibration
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_ctrl
 
 on post-fs
     exec /system/bin/chargemon
