@@ -45,9 +45,6 @@ on init
     symlink /storage/usbdisk /usbdisk
     symlink /storage/usbdisk /mnt/usbdisk
 
-    # Clear splash screen
-    write /sys/class/graphics/fb0/blank 1
-
     mkdir /tmp
     mount tmpfs tmpfs /tmp nosuid mode=0755,uid=0,gid=0
     chmod 0664 /proc/rdtag
