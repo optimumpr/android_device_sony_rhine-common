@@ -84,6 +84,7 @@ BOARD_LIB_DUMPSTATE := libdumpstate.sony
 TARGET_PROVIDES_GPS_LOC_API := true
 
 # Graphics
+USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
