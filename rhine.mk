@@ -104,10 +104,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh
 
-# Z1CameraFix
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/camfix/Z1CameraFix.apk:system/priv-app/Z1CameraFix.apk
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/gps/flp.conf:system/etc/flp.conf \
