@@ -104,9 +104,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh
 
-# Z1CameraFix
+# SonyApps
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/camfix/Z1CameraFix.apk:system/priv-app/Z1CameraFix.apk
+    $(COMMON_PATH)/sonyapps/app/Z1CameraFix.apk:system/priv-app/Z1CameraFix.apk \
+    $(COMMON_PATH)/sonyapps/app/textinput-tng.apk:system/app/textinput-tng.apk \
+    $(COMMON_PATH)/sonyapps/app/UserDictionaryProvider.apk:system/app/UserDictionaryProvider.apk \
+    $(COMMON_PATH)/sonyapps/app/xperia-keyboard-dictionaries.apk:system/app/xperia-keyboard-dictionaries.apk \
+    $(COMMON_PATH)/sonyapps/lib/libswiftkeysdk-java.so:system/lib/libswiftkeysdk-java.so
 
 # GPS
 PRODUCT_COPY_FILES += \
