@@ -184,9 +184,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=false \
     audio.offload.multiple.enabled=false \
-    audio.offload.pcm.enable=enable \
-    av.offload.enable=enable \
-    av.streaming.offload.enable=enable
+    audio.offload.pcm.enable=false \
+    av.offload.enable=false \
+    av.streaming.offload.enable=false
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
