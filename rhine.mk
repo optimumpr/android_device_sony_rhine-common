@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    libdirac \
     audiod \
     audio.a2dp.default \
     audio.primary.msm8974 \
@@ -84,10 +85,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     tinymix
-
-# Audio configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -178,6 +175,10 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.resampler.quality=4
+
+# DiracHD audio effects
+PRODUCT_PROPERTY_OVERRIDES += \
+    dsp.dirac.enable=true
 
 # Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
